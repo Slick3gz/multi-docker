@@ -10,7 +10,7 @@ script:
 
 after_success:
   - docker build -t slick3gz/multi-client ./client
-  - docker build -t slick3gz/mulit-nginx ./nginx
+  - docker build -t slick3gz/multi-nginx ./nginx
   - docker build -t slick3gz/multi-server ./server
   - docker build -t slick3gz/multi-worker ./worker
   # Log in to the docker CLI
